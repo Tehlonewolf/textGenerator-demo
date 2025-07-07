@@ -6,7 +6,7 @@ import streamlit as st
 
 # === Configuration ===
 # Embed your API key directly here (or replace with environment variable retrieval)
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+openai.api_key = st.secrets["OPENAI_API_KEY"]  
 
 # Default model choice; change to "gpt-4" if you have access and want higher-quality output
 MODEL = "gpt-4"
