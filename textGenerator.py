@@ -19,9 +19,8 @@ def generate_description(content: str, model: str = MODEL) -> str:
     system_prompt = (
         "You are an expert social media copywriter for a Property Management Company. "
         "Write an engaging, concise, and attention-grabbing description for a social media post. "
-        "If the prompt given by the user is about administration (e.g. Rent Reminders) or anything else that's formal, keep the generated description formal (no jokes, emojis, hashtags, etc.). "
+        "If the prompt given by the user is about administration (e.g. Rent Reminders) or anything else that's formal, keep the generated description formal and professional (no jokes, emojis, hashtags, etc.). "
         "If the prompt given by the user is about any festivals/holidays/events, feel free to make it more engaging. "
-        f"The key points to include are: {content}."
     ) 
     
     prompt = (
